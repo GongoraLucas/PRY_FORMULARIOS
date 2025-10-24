@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <head>
+      <h1>Factura</h1>
+    </head>
+    <main>
+      <form action="" method="get">
+        <table border="2" width="100%">
+          <thead>
+            <tr>
+              <th colspan="4">FORMULARIO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th width="50%">
+                <label for="idFactura">ID</label>
+              </th>
+              <td>
+                <input
+                  type="number"
+                  name="idFactura"
+                  id="idFactura"
+                  readonly
+                  value="0001"
+                />
+              </td>
+              <th width="50%">
+                <label for="fecha">FECHA DE EMISION</label>
+              </th>
+              <td>
+                <input type="date" name="fecha" id="fecha" min="2025-10-24" />
+              </td>
+            </tr>
+            <tr>
+              <th colspan="4">CLIENTE</th>
+            </tr>
+            <tr>
+              <th width="50%">
+                <label for="cedula">CEDULA</label>
+              </th>
+              <td>
+                <input
+                  type="text"
+                  name="cedula"
+                  id="cedula"
+                  value="1724340474"
+                  maxlength="10"
+                  minlength="10"
+                />
+              </td>
+              <th width="50%">
+                <label for="name">NOMBRE</label>
+              </th>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  value="Lucas Gongora"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th width="50%">
+                <label for="email">EMAIL</label>
+              </th>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value="lucas@gmail.com"
+                />
+              </td>
+              <th width="50%">
+                <label for="name">TELEFONO</label>
+              </th>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  value="0995190990"
+                  minlength="10"
+                  maxlength="10"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <label for="direccion">DIRECCION</label>
+              </th>
+              <td colspan="2">
+                <input type="text" value="Av.Napo" />
+              </td>
+            </tr>
+            <tr>
+              <th colspan="4">PRODUCTO</th>
+            </tr>
+            <tr>
+              <th>
+                <label for="idProducto">IDENTIFICADOR PRODUCTO</label>
+              </th>
+              <td>
+                <input type="text" value="000001" readonly />
+              </td>
+              <th>
+                <label for="idProducto">NOMBRE</label>
+              </th>
+              <td>
+                <input type="text" value="Laptop Acer Nitro 5" readonly />
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="categoria">CATEGORIA</label>
+              </th>
+              <td>
+                <input type="text" value="Laptop"  id="categoria" name="categoria" />
+              </td>
+              <th>
+                <label for="idProducto">Precio</label>
+              </th>
+              <td>
+                <input type="number" value="800"  />
+              </td>
+            </tr>
+            <tr>
+                <th>
+                <label for="total">SUBTOTAL</label>
+              </th>
+              <td>
+                <input type="number" value="800"  id="total" name="total" />
+              </td>
+              <th>
+                <label for="iva">TOTAL</label>
+              </th>
+              <td>
+                <input type="number" value="800"  />
+              </td>
+                
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+                <th colspan="4">
+                    <input type="submit" name="submit" id="submit">
+                </th>
+            </tr>
+          </tfoot>
+        </table>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

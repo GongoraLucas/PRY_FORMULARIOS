@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Productos</title>
+</head>
+<body>
+    <header>
+        <h1>REGISTRO DE PRODUCTOS</h1>
+    </header>
+    <main>
+        <form action="form_factura.html" method="get">
+            <table width="100%" border="2">
+                <thead>
+                    <tr>
+                        <th colspan="10">FORMULARIO DE PRODUCTOS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="id_producto">ID</label>
+                        </th>
+                        <td>
+                            <input type="number" 
+                            name="id_producto" 
+                            id="id_producto" 
+                            placeholder="Ej: 001"
+                            min="1" 
+                            max="100"
+                            >
+                        </td>
+                        <th>
+                            <label for="nombre_producto">NOMBRE</label>
+                        </th>
+                        <td colspan="7">
+                            <input type="text" 
+                            name="nombre_producto" 
+                            id="nombre_producto" 
+                            placeholder="Ingrese nombre del producto"
+                            >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <label for="descripcion">DESCRIPCION</label>
+                        </th>
+                        <td colspan="9">
+                            <input type="text" 
+                            name="descripcion" 
+                            id="descripcion" 
+                            placeholder="Ingrese una breve descripcion"
+                            >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="10">CATEGORIA</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="cat_tecnologia">TECNOLOGIA</label>
+                        </th>
+                        <td>
+                            <input type="radio" 
+                            name="categoria" 
+                            id="cat_tecnologia" 
+                            value="tecnologia"
+                            >
+                        </td>
+                        <th>
+                            <label for="cat_inalambrico">INALAMBRICO</label>
+                        </th>
+                        <td>
+                            <input type="radio" 
+                            name="categoria" 
+                            id="cat_inalamabrico" 
+                            value="inalambrico"
+                            >
+                        </td>
+                        <th>
+                            <label for="cat_cableado"></label>
+                        </th>
+                        <td colspan="5">
+                            <input type="radio" 
+                            name="categoria" 
+                            id="cat_cableado" 
+                            value="cableado"
+                            >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <label for="precio">PRECIO</label>
+                        </th>
+                        <td>
+                            <input type="number" 
+                            name="precio" 
+                            id="precio" 
+                            placeholder="Ej: 150.50"
+                            >
+                        </td>
+                        <th>
+                            <label for="fecha_ingreso">FECHA INGRESO</label>
+                        </th>
+                        <td colspan="7">
+                            <input type="date" 
+                            name="fecha_ingreso" 
+                            id="fecha_ingreso"
+                            >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="10">STOCK</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="stock_actual">ACTUAL</label>
+                        </th>
+                        <td>
+                            <input type="number" 
+                            name="stock_actual" 
+                            id="stock_actual" 
+                            placeholder="Ej: 100"
+                            >
+                        </td>
+                        <th>
+                            <label for="stock_minimo">MINIMO</label>
+                        </th>
+                        <td>
+                            <input type="number" 
+                            name="stock_minimo" 
+                            id="stock_minimo" 
+                            placeholder="Ej: 10"
+                            >
+                        </td>
+                        <th>
+                            <label for="stock_maximo">MAXIMO</label>
+                        </th>
+                        <td colspan="5">
+                            <input type="number" 
+                            name="stock_maximo" 
+                            id="stock_maximo" 
+                            placeholder="Ej: 500"
+                            >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <label for="color_producto">COLOR</label>
+                        </th>
+                        <td>
+                            <input type="color" 
+                            name="color_producto" 
+                            id="color_producto" 
+                            value="#000000"
+                            >
+                        </td>
+                        <th>
+                            <label for="imagen_producto">IMAGEN</label>
+                        </th>
+                        <td colspan="7">
+                            <input type="file" 
+                            name="imagen_producto" 
+                            id="imagen_producto" 
+                            accept=".png, .jpg, .jpeg, image/*"
+                            >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="10">DISPONIBILIDAD</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="disp_lunes">LUNES</label>
+                        </th>
+                        <td>
+                            <input type="checkbox" 
+                            name="disponibilidad[]" 
+                            id="disp_lunes" 
+                            value="lunes"
+                            >
+                        </td>
+                        <th>
+                            <label for="disp_martes">MARTES</label>
+                        </th>
+                        <td>
+                            <input type="checkbox" 
+                            name="disponibilidad[]" 
+                            id="disp_martes" 
+                            value="martes"
+                            >
+                        </td>
+                        <th>
+                            <label for="disp_miercoles">MIERCOLES</label>
+                        </th>
+                        <td>
+                            <input type="checkbox" 
+                            name="disponibilidad[]" 
+                            id="disp_miercoles" 
+                            value="miercoles"
+                            >
+                        </td>
+                        <th>
+                            <label for="disp_jueves">JUEVES</label>
+                        </th>
+                        <td>
+                            <input type="checkbox" 
+                            name="disponibilidad[]" 
+                            id="disp_jueves" 
+                            value="jueves"
+                            >
+                        </td>
+                        <th>
+                            <label for="disp_viernes">VIERNES</label>
+                        </th>
+                        <td>
+                            <input type="checkbox" 
+                            name="disponibilidad[]" 
+                            id="disp_viernes" 
+                            value="viernes"
+                            >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <label for="buscar_producto">BUSCAR PRODUCTO</label>
+                        </th>
+                        <td colspan="4">
+                            <input type="search" 
+                            name="buscar_producto" 
+                            id="buscar_producto" 
+                            placeholder="Buscar por nombre o codigo"
+                            >
+                        </td>
+                        <th>
+                            <label for="codigo_barras">CODIGO DE BARRAS</label>
+                        </th>
+                        <td colspan="4">
+                            <input type="text" 
+                            name="codigo_barras" 
+                            id="codigo_barras" 
+                            placeholder="Ej: 7501234567890"
+                            >
+                        </td>
+                    </tr>
+                    <!-- BOTONES -->
+                </tbody>
+                <tfoot>
+                     <tr>
+                        <td colspan="10">
+                            <input type="submit" 
+                            name="enviar" 
+                            id="enviar" 
+                            value="GUARDAR PRODUCTO">
+                            
+                            <input type="reset" 
+                            value="LIMPIAR FORMULARIO">
+                        </td>
+                    </tr>
+                </tfoot>
+            </form>
+        </table>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

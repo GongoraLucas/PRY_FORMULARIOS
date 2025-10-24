@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATOS DE CLIENTE</title>
+</head>
+
+<body>
+    <header>
+        <h1>INGRESE DE DATOS DEL CLIENTE PARA FACTURACION</h1>
+    </header>
+    <main>
+        <form action="form_product.html" method="get">
+            <table width="100%" border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">Datos del cliente</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>
+                            <input type="text" name="Nombre o Razon Social" id="Nombre o Razon Social"
+                                placeholder="INGRESE SU NOMBRE O RAZON SOCIAL" value="Isaac Erazo" required>
+
+                        </th>
+                    </tr>
+                    <th>Cedula</th>
+                    <th>
+                        <input type="text" name="cedula" id="cedula" placeholder="INGRESE SU NUMERO DE IDENTIFICACION"
+                            value="1712342019" minlength="10" maxlength="10" autofocus required>
+                    </th>
+                    </tr>
+                    <th>Direccion</th>
+                    <th>
+                        <input type="text" name="direccion" id="direccion" placeholder="INGRESE SU DIRECCION"
+                            value="Av. Amazonas N123-45" autofocus required>
+                    </th>
+                    <tr>
+                        <th>Telefono</th>
+                        <th>
+                            <input type="text" name="telefono" id="telefono" placeholder="INGRESE SU TELEFONO"
+                                value="09983990034" minlength="10" maxlength="10" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Correo Electronico</th>
+                        <th>
+                            <input type="email" name="email" id="email" placeholder="INGRESE SU TELEFONO"
+                                value="cliente@gmail.com" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Esta Afiliado?</th>
+                        <th>
+                            <label for="SI"> SI</label>
+                            <input type="radio" name="afiado" id="afiliado" value="afiliado">
+                            <label for="NO"> NO
+
+                            </label>
+                            <input type="radio" name="afiado" id="afiado" value="NO">
+                        </th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th >
+                            <input type="submit" name="siguiente" id="siguiente" value="Siguiente">
+                        </th>
+                        <th>
+                            <input type="reset" name="limpiar" id="limpiar" value="Limpiar datos">
+                        </th>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </form>
+
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
